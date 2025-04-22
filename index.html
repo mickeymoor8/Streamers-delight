@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Streamer's Delight: Create Account</title>
     <link rel="stylesheet" href="style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TL5J3HBQDB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TL5J3HBQDB');
+    </script>
 </head>
 
 <body>
@@ -47,22 +55,22 @@
             <form id="create-form">
                 <div class="form-group">
                     <label for="username">Username:</label>
-                    <input type="text" id="username" name="username" required minlength="3" maxlength="20">
+                    <input type="text" id="username" name="username" required minlength="3" maxlength="20" autocomplete="username">
                     <small class="form-error"></small>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required autocomplete="email">
                     <small class="form-error"></small>
                 </div>
                 <div class="form-group">
                     <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" required minlength="8">
+                    <input type="password" id="password" name="password" required minlength="8" autocomplete="new-password">
                     <small class="form-error"></small>
                 </div>
                 <div class="form-group">
                     <label for="confirm-password">Confirm Password:</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required minlength="8">
+                    <input type="password" id="confirm-password" name="confirm-password" required minlength="8" autocomplete="new-password">
                     <small class="form-error"></small>
                 </div>
                 <button type="submit">Join the Cuteness!</button>
